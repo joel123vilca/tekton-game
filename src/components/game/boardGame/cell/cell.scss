@@ -1,0 +1,37 @@
+$square-size: 30px;
+$ship-block-size: 15px;
+$font-color:#785;
+$background:linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);;
+$ship-background: linear-gradient(135deg, #f05f57 10%, #360940 100%);
+$missed-background: linear-gradient(135deg, #5efce8 10%, #736efe 100%);
+
+.cell {
+  display: inline-block;
+  width: $square-size;
+  height: $square-size;
+  border: 1px solid #eee;
+  background: #fefdfd;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  cursor: pointer;
+  color: black;
+}
+.selected {
+  display: inline-block;
+  width: $square-size;
+  height: $square-size;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  color: black;
+  background: $missed-background;
+}
+.ship {
+  display: inline-block;
+  width: $square-size;
+  height: $square-size;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  background: $ship-background;
+}
